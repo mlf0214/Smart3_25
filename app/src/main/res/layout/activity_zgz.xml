@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolobar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="match_parent"
+                app:queryHint="请输入要搜索的职位"
+                android:id="@+id/sv"
+                android:layout_height="30dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="20dp"
+                    android:elevation="10dp">
+                    <com.youth.banner.Banner
+                        android:layout_width="match_parent"
+                        android:id="@+id/banner"
+                        android:layout_height="match_parent"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="热门职位"
+                        android:textSize="20dp"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/black"/>
+                    <com.example.smart3_25.util.myview.MyGridVIew
+                        android:layout_width="match_parent"
+                        android:numColumns="3"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mv"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="职位列表"
+                        android:textSize="20dp"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/black"/>
+                    <com.example.smart3_25.util.myview.MyListVIew
+                        android:layout_width="match_parent"
+                        android:id="@+id/news_lv"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

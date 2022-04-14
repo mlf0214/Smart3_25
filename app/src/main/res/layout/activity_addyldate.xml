@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include layout="@layout/toolobar"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="说点什么"
+        android:id="@+id/et"/>
+    <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:text="添加图片"
+                                  android:textSize="20dp"
+                                  android:gravity="center|left"
+                      android:layout_marginLeft="10dp"
+                                  android:textColor="@color/black"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/ivadd"
+        android:src="@drawable/ic_baseline_add_24"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_add"
+        android:text="确认"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

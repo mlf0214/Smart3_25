@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolobar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="编辑车辆信息卡"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:textSize="30dp"
+        android:layout_weight="1"/>
+    <EditText
+        android:id="@+id/et1"
+        android:hint="请输入车牌号码"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <EditText
+        android:id="@+id/et2"
+        android:hint="请输入车位号"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <EditText
+        android:id="@+id/et3"
+
+        android:hint="请输入停车卡号"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <EditText
+        android:id="@+id/et4"
+
+        android:hint="请输入姓名"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <EditText
+        android:id="@+id/et5"
+
+        android:hint="请输入手机号"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <EditText
+        android:id="@+id/et6"
+
+        android:hint="住户姓名"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <EditText
+        android:id="@+id/et7"
+
+        android:hint="请输入地址"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:text="提交"
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <Button
+            android:text="修改"
+            android:id="@+id/btn2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

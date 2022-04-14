@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolobar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <RadioButton
+                android:background="@drawable/select_rab"
+                android:text="全部服务"
+                android:id="@+id/rb1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:button="@null"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/hui"/>
+            <RadioButton
+                android:id="@+id/rb2"
+
+                android:button="@null"
+                android:background="@drawable/select_rab"
+                android:text="车主服务"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/hui"/>
+            <RadioButton
+                android:id="@+id/rb3"
+
+                android:button="@null"
+                android:background="@drawable/select_rab"
+                android:text="便民服务"
+                android:gravity="center"
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/hui"/>
+            <RadioButton
+                android:id="@+id/rb4"
+
+                android:button="@null"
+                android:background="@drawable/select_rab"
+                android:text="生活服务"
+                android:gravity="center"
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </RadioGroup>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+        <com.example.smart3_25.util.myview.MyGridVIew
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mv"
+            android:numColumns="3"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

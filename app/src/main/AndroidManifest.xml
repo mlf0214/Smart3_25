@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    package="com.example.smart3_25">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        tools:replace="android:theme"
+        android:allowBackup="true"
+        android:name=".util.MyApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Smart3_25">
+        <activity android:name=".base.BaseActivity"/>
+        <activity android:name=".ui.activty.zhsq.XIugaiClDAtaActivity"/>
+        <activity android:name=".ui.activty.zhsq.CLGLActivity"/>
+        <activity android:name=".ui.activty.zhsq.WYFwActivity"/>
+        <activity android:name=".ui.activty.zhsq.TZxqActivity"/>
+        <activity android:name=".ui.activty.zgz.GerenjianliActivity"/>
+        <activity android:name=".ui.activty.zgz.Toudilishi"/>
+        <activity android:name=".ui.activty.zhsq.YOuLInshejiaoActivity"/>
+        <activity android:name=".ui.activty.zgz.ZhaoGongzuoXqActivity"/>
+        <activity android:name=".ui.activty.zfz.ZFZxqActivity"/>
+        <activity android:name=".ui.activty.zhsq.AddYOulinDataActivity"/>
+        <activity android:name=".ui.activty.zfz.ZhangfangziZYActivity"/>
+        <activity android:name=".ui.activty.home.UserSetActivity"/>
+        <activity android:name=".ui.activty.home.PasswordSetActivity"/>
+        <activity android:name=".ui.activty.home.YJFKActivity"/>
+        <activity android:name=".ui.activty.zhsq.KjGuanliActivity"/>
+        <activity android:name=".ui.activty.csdt.ListXqActivity"/>
+        <activity android:name=".ui.activty.csdt.ZLTActivity"/>
+        <activity android:name=".ui.activty.home.NewsXQActivity"/>
+        <activity android:name=".ui.activty.csdt.CHengshiDiTieeActivity"/>
+        <activity android:name=".ui.activty.home.MainActivity"/>
+        <activity android:name=".ui.activty.login.ZHuceActiivty"/>
+        <activity
+            android:name=".ui.activty.login.LogActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activty.zgz.ZhaoGongZuoActivity" />
+    </application>
+
+</manifest>

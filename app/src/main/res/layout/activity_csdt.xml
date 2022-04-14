@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include layout="@layout/toolobar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="150dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:autofillHints="name"
+                        android:layout_height="50dp"/>
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="请稍等"
+                        android:textSize="35dp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="线路信息"
+                android:textSize="20dp"
+                android:gravity="center|left"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"/>
+            <com.example.smart3_25.util.myview.MyListVIew
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mlv"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

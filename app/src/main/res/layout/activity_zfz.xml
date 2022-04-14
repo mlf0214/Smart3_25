@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include layout="@layout/toolobar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/sv"
+                app:queryHint="请输入房源名称"
+                />
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"/>
+            <RadioGroup
+                android:id="@+id/rg"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:text="二手"
+                    android:id="@+id/rb1"
+                    android:background="@drawable/select_rab"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:text="租房"
+                    android:button="@null"
+                    android:background="@drawable/select_rab"
+
+
+                    android:id="@+id/rb2"
+
+                    android:gravity="center"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:text="楼盘"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:background="@drawable/select_rab"
+
+                    android:id="@+id/rb3"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:text="中介"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:background="@drawable/select_rab"
+
+                    android:id="@+id/rb4"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+            <TextView
+                                          android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:text="房源展示区"
+                                          android:textSize="20dp"
+                                          android:gravity="center|left"
+                              android:layout_marginLeft="10dp"
+                                          android:textColor="@color/black"/>
+            <com.example.smart3_25.util.myview.MyListVIew
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mlv"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
